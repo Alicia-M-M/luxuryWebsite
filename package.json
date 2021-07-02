@@ -1,0 +1,30 @@
+{
+  "name": "luxurysite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run usemin",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alicia-M-M/LuxWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alicia-M-M/LuxWebsite/issues"
+  },
+  "homepage": "https://github.com/Alicia-M-M/LuxWebsite#readme",
+  "devDependencies": {
+    "imagemin-cli": "^5.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "usemin-cli": "^0.6.0"
+  }
+}
